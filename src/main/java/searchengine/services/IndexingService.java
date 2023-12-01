@@ -1,6 +1,8 @@
 package searchengine.services;
 
+import searchengine.dto.statistics.StatisticsResponse;
+
 public interface IndexingService {
-    String startIndexing();
-    String stopIndexing();
+    StatisticsResponse startIndexing() throws InterruptedException;
+    StatisticsResponse stopIndexing();
 }
